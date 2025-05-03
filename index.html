@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atiphan Charoenphon – Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        background-color: #f5f1ec;
+        color: #333;
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 40px 20px;
+      }
+
+      .container,
+      .info-container {
+        display: flex;
+        flex-direction: row;
+        background-color: #fff;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 16px;
+        overflow: hidden;
+        max-width: 960px;
+        width: 100%;
+        margin-bottom: 40px;
+        animation: fadeIn 1.2s ease-in-out forwards;
+      }
+
+      .info-container {
+        flex-direction: column;
+      }
+
+      .image-section img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .image-section {
+        flex: 1 1 300px;
+        max-height: 100%;
+      }
+
+      .text-section,
+      .info-section {
+        flex: 2;
+        padding: 40px;
+        font-size: 1rem;
+        animation: slideIn 1s ease-in-out forwards;
+      }
+
+      .name {
+        font-family: "Playfair Display", serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin: 0;
+      }
+
+      .title {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.85rem;
+        color: #555;
+        margin-bottom: 20px;
+      }
+
+      .bio {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      .info-section h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      .info-section ul {
+        list-style: disc;
+        padding-left: 20px;
+      }
+
+      .cv-button {
+        display: inline-block;
+        background-color: #003366;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s;
+      }
+
+      .cv-button:hover {
+        background-color: #0055aa;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: scale(0.96);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      @keyframes slideIn {
+        0% {
+          transform: translateX(40px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .container,
+        .info-container {
+          flex-direction: column;
+        }
+        .image-section {
+          width: 100%;
+          max-height: 300px;
+        }
+        .text-section,
+        .info-section {
+          padding: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="image-section">
+          <img src="profile.jpg" alt="Atiphan Charoenphon" />
+        </div>
+        <div class="text-section">
+          <h1 class="name">Atiphan Charoenphon</h1>
+          <p class="title">PhD Applicant in AI, NLP & Data Science</p>
+          <p class="bio">
+            I am a software developer with a Master’s in IT Management from
+            Mahidol University, Thailand (GPA 4.00). My research focuses on
+            Natural Language Processing (NLP), Sentiment Analysis, and
+            Tansformer-based models. I have published work on cyberbullying
+            detection and comparative studies of language models on Thai hotel
+            reviews.
+          </p>
+        </div>
+      </div>
+
+      <div class="info-container">
+        <div class="info-section">
+          <h2>Research Interests</h2>
+          <ul>
+            <li>Artificial Intelligence and Machine Learning</li>
+            <li>Natural Language Processing and LLMs</li>
+            <li>Agentic AI, Automation, and AGI</li>
+            <li>Environment and Healthcare informative processing</li>
+          </ul>
+        </div>
+
+        <div class="info-section">
+          <h2>Publications</h2>
+          <ul>
+            <li>
+              <strong>Cyberbullying Detection on Social Media</strong> –
+              Conference, 2023
+            </li>
+            <li>
+              <strong
+                >Comparative Study of SMLs, Transformers, and LLMs on Thai Hotel
+                Reviews</strong
+              >
+              – Journal (Under Review)
+            </li>
+          </ul>
+        </div>
+
+        <div class="info-section">
+          <h2>Contact</h2>
+          <p>
+            Email:
+            <a href="mailto:atiphan.ch@gmail.com">atiphan.ch@gmail.com</a>
+          </p>
+          <p>
+            GitHub:
+            <a href="https://github.com/itagnats" target="_blank"
+              >https://github.com/itagnats</a
+            >
+          </p>
+        </div>
+
+        <div class="info-section" style="text-align: center">
+          <a href="cv.pdf" class="cv-button" target="_blank"
+            >Download My CV (PDF)</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
